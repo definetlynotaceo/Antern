@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #323232;
+  padding: 0;
+  margin: 0;
+  overscroll-behaviour: none;
+}
+html .navigation, body .navigation {
+  width: 10%;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html .navigation .logo, body .navigation .logo {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+html .navigation .logo img, body .navigation .logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100px;
+  height: auto;
+}
+html .navigation .directories ul, body .navigation .directories ul {
+  padding: 0;
+  margin-left: 10px;
+  list-style: none;
+}
+html .navigation .directories ul li, body .navigation .directories ul li {
+  text-align: left;
+  padding: 15px 35px;
+}
+html .navigation .directories ul li a, body .navigation .directories ul li a {
+  text-decoration: none;
+}
+html .navigation .directories ul li a span, body .navigation .directories ul li a span {
+  color: #EFEFEF;
+}
+html .navigation .directories ul li.active, body .navigation .directories ul li.active {
+  background: #151515;
+  border-radius: 50px 0 0 50px;
+}
+html .navigation .settings ul, body .navigation .settings ul {
+  padding: 0;
+  margin-left: 10px;
+  list-style: none;
+}
+html .navigation .settings ul li, body .navigation .settings ul li {
+  text-align: left;
+  padding: 15px 35px;
+}
+html .navigation .settings ul li a, body .navigation .settings ul li a {
+  text-decoration: none;
+}
+html .navigation .settings ul li a span, body .navigation .settings ul li a span {
+  color: #EFEFEF;
+}
+html .content, body .content {
+  width: 90%;
+  height: 100%;
+  background: #EFEFEF;
+  float: right;
+  border-radius: 10px 0 0 10px;
+}
+html .content .wrapper, body .content .wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 50px 25px 25px 25px;
+  position: relative;
+}
+html .content .wrapper .vorlagen, body .content .wrapper .vorlagen {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+html .content .wrapper .vorlagen .vorlage, body .content .wrapper .vorlagen .vorlage {
+  background: #FFFFFF;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 300px;
+  height: 200px;
+  margin-right: 25px;
+}
+html .content .wrapper .vorlagen .new__vorlage, body .content .wrapper .vorlagen .new__vorlage {
+  background: none;
+  height: 200px;
+  padding: 15px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px dotted #1473E6;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+html .content .wrapper .vorlagen .new__vorlage:hover, body .content .wrapper .vorlagen .new__vorlage:hover {
+  background: #FFFFFF;
+  border: none;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+html .content .wrapper .vorlagen .new__vorlage .add, body .content .wrapper .vorlagen .new__vorlage .add {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  text-align: center;
+}
+html .content .wrapper .vorlagen .new__vorlage .add::after, body .content .wrapper .vorlagen .new__vorlage .add::after {
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1473E6;
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  transform: translate(-50%, -50%);
+}
+html .content .wrapper .vorlagen .new__vorlage .add::before, body .content .wrapper .vorlagen .new__vorlage .add::before {
+  content: "";
+  width: 3px;
+  height: 35px;
+  background: #1473E6;
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  transform: translate(-50%, -50%);
+}
+html .content .wrapper .vorlagen .new__vorlage .add span, body .content .wrapper .vorlagen .new__vorlage .add span {
+  text-align: center;
+  color: #1473E6;
+}
+html .content .wrapper .information, body .content .wrapper .information {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+html .content .wrapper .information .info__block, body .content .wrapper .information .info__block {
+  width: 200px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+}
+
+p, span {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  color: #323232;
+  line-height: 1.5em;
+}
+p.subtle, span.subtle {
+  font-weight: normal;
+  color: #7C7E90;
+  margin-right: 5px;
+}
+
+a {
+  color: #1473E6;
+  font-weight: bold;
+  text-decoration: underline;
+}

@@ -1,0 +1,1 @@
+var express=require("express"),router=express.Router();router.get("/",(function(e,r){r.render("home/index")})),router.get("/home",(function(e,r){r.render("home/index")})),module.exports=router;
