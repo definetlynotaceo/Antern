@@ -1,5 +1,10 @@
 @import "variables"
+@import "signin"
+@import "userWelcome"
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+
+*, :after, :before
+  box-sizing: border-box
 
 html, body
   width: 100%
@@ -157,7 +162,7 @@ html, body
         .info__block
           width: 200px
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, label
   font-family: "Roboto", sans-serif
   font-weight: 600
   color: $black
@@ -176,6 +181,7 @@ p, span
     margin-right: 5px
 
 a
+  font-family: "Roboto", sans-serif
   color: $highlight
   font-weight: bold
   text-decoration: underline
